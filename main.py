@@ -28,7 +28,7 @@ st.markdown("<h3 style='text-align: center;'>Months</h3>",
             unsafe_allow_html=True)
 month_col, month_discount_section = st.columns([2.5, 1])
 with month_col:
-    months_selected = st.selectbox("Number of Months", range(1, 7))
+    months_selected = st.number_input("Number of Months", min_value=1, max_value=6)
 with month_discount_section:
     st.table({"Months": ["4-5 Months", "6 Months"],
              "Discount": ["20%", "30%"]})
@@ -102,3 +102,9 @@ annotated_text(
     " = ",
     (f"{round(final_price, 2)} CAD", "", final_price_color)
 )
+
+
+# --- Unit Price --- #
+unit_price = final_price/(months_selected*screens_selected)
+st.markdown("\n")
+st.metric("Unit Price", f"{round(unit_price,2)} CAD / month / display")
