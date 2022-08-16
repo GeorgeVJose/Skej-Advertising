@@ -65,6 +65,7 @@ elif screens_selected <= 15:
     screen_discount = 15
 else:
     screen_discount = 25
+st.markdown("---")
 
 # --- Final Price --- #
 st.markdown("<h3 style='text-align: center;'>Final Price</h3>",
