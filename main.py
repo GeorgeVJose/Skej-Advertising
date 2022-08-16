@@ -52,7 +52,7 @@ with screen_col:
     screens_selected = int(st.number_input(
         "Number of Displays", min_value=1, max_value=25))
 with screen_discount_section:
-    st.table({"Screens": ["5-9", "10-15", "16-25"],
+    st.table({"Displays": ["5-9", "10-15", "16-25"],
              "Discount": ["10%", "15%", "25%"]})
 
 if screens_selected < 5:
