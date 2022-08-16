@@ -89,10 +89,14 @@ annotated_text(
 annotated_text(
     " x ",
     (f"{months_selected} x  {100-months_discount}% ", "month rate", month_color),
+    " ",
+    (f"Discount: {months_discount}%", "", month_color),
 )
 annotated_text(
     " x ",
     (f"{screens_selected} x  {100-screen_discount}% ", "display rate", screen_color),
+    " ",
+    (f"Discount: {screen_discount}%", "", screen_color),
 )
 annotated_text(
     " = ",
