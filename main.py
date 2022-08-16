@@ -85,10 +85,16 @@ if screens_selected < 5:
 
 annotated_text(
     (f"{zones_amount[zone_selected]} CAD", "Zone Amount", "#afa"),
+)
+annotated_text(
     " x ",
     (f"{months_selected} x  {100-months_discount}% ", "month rate", month_color),
+)
+annotated_text(
     " x ",
     (f"{screens_selected} x  {100-screen_discount}% ", "display rate", screen_color),
+)
+annotated_text(
     " = ",
-    (f"{round(final_price, 2)} CAD", "", final_price_color),
+    (f"{round(final_price, 2)} CAD", "", final_price_color)
 )
